@@ -102,7 +102,7 @@ cv-en-ligne/
 
 ### 1. Cloner le projet
 ```bash
-git clone https://github.com/AtseDavid/cv-en-ligne.git
+git clone https://github.com/DavidAtse/cv-en-ligne.git
 cd cv-en-ligne
 ```
 
@@ -158,7 +158,7 @@ Toutes vos données sont centralisées dans **[`src/data/resumeData.js`](src/dat
 3. Liez votre dépôt local et poussez le code :
    ```bash
    git branch -M main
-   git remote add origin https://github.com/AtseDavid/cv-en-ligne.git
+   git remote add origin https://github.com/DavidAtse/cv-en-ligne.git
    git push -u origin main
    ```
 
@@ -182,7 +182,7 @@ Toutes vos données sont centralisées dans **[`src/data/resumeData.js`](src/dat
 **David Atsé**
 - 💼 Développeur Web & Fullstack
 - 📧 Email : [daatsey24@gmail.com](mailto:daatsey24@gmail.com)
-- 🐙 GitHub : [@AtseDavid](https://github.com/AtseDavid)
+- 🐙 GitHub : [@DavidAtse](https://github.com/DavidAtse)
 
 ---
 

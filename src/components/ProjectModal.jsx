@@ -57,7 +57,7 @@ export default function ProjectModal({ project, onClose }) {
             Fermer
           </button>
           <a 
-            href="https://github.com/AtseDavid" 
+            href="https://github.com/DavidAtse" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="nav-btn primary"

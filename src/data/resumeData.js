@@ -3,8 +3,8 @@ export const candidateData = {
   role: "DÉVELOPPEUR WEB & FULLSTACK",
   tagline: "RESUME | 2026",
   email: "daatsey24@gmail.com",
-  github: "https://github.com/AtseDavid",
-  githubDisplay: "GITHUB.COM/ATSEDAVID",
+  github: "https://github.com/DavidAtse",
+  githubDisplay: "GITHUB.COM/DAVIDATSE",
   location: "Abidjan, Côte d'Ivoire & Télétravail",
   status: "DISPONIBLE POUR PROJETS & CDI / CDD",
   bio: "Développeur Web & Fullstack passionné par la conception d'applications web modernes, réactives et hautement performantes. Doté d'une solide expertise en front-end (React, Vite, JavaScript ES6+) et back-end (PHP, Laravel, APIs REST), je m'attache à créer des expériences utilisateur fluides et à relever des défis techniques stimulants."
