@@ -64,6 +64,9 @@ export const projectsData = [
     bannerClass: "project-banner-imots",
     desc: "Plateforme web mobile interactive de devinette de mots 100 % ancrée dans la culture ivoirienne (nouchi, gastronomie, villes). Architecture légère avec sécurité anti-triche et synchronisation multi-appareils.",
     tags: ["PHP", "JavaScript", "Temps Réel", "Mobile-First"],
+    liveUrl: "https://imots.alwaysdata.net/",
+    liveLabel: "Jouer au jeu (En direct)",
+    githubUrl: "https://github.com/DavidAtse/Devine-Mot",
     highlights: [
       "Mécanique addictive avec 4 créneaux par jour et indicateur de proximité thermique",
       "Sécurité anti-triche côté serveur et synchronisation des profils multi-appareils",
@@ -80,6 +83,8 @@ export const projectsData = [
     bannerClass: "project-banner-pierres",
     desc: "Application web complète avec architecture découplée : Frontend dynamique sous React 19 & React Router, backend API Laravel & TailwindCSS, gestion de données interactive.",
     tags: ["React 19", "Laravel", "Tailwind", "Vite"],
+    liveUrl: null,
+    githubUrl: "https://github.com/DavidAtse/Pierres-Vivantes",
     highlights: [
       "Architecture moderne découplée Frontend React 19 / Backend Laravel",
       "Système de routage dynamique et réactif avec React Router",
@@ -96,6 +101,8 @@ export const projectsData = [
     bannerClass: "project-banner-babifab",
     desc: "Plateforme musicale et streaming audio complète conçue pour valoriser les artistes indépendants : lecteur audio interactif, gestion de playlists, catalogue dynamique et back-office Laravel.",
     tags: ["Laravel", "Audio Web API", "PHP", "UI/UX"],
+    liveUrl: null,
+    githubUrl: "https://github.com/DavidAtse/BabiFab-Sound",
     highlights: [
       "Lecteur audio interactif avec contrôles de lecture temps réel",
       "Gestion fluide des pistes audio, métadonnées et playlists",
@@ -112,6 +119,8 @@ export const projectsData = [
     bannerClass: "project-banner-api",
     desc: "Applications web connectées à des services tiers : recherche de films en temps réel avec affiches et métadonnées, consultation des prévisions météorologiques géolocalisées avec gestion des erreurs asynchrones.",
     tags: ["Fetch API", "JavaScript ES6+", "Async / Await", "REST"],
+    liveUrl: null,
+    githubUrl: "https://github.com/DavidAtse/DetailEmployee",
     highlights: [
       "Maîtrise approfondie des requêtes Fetch et de l'asynchronisme (Async / Await)",
       "Traitement et affichage dynamique des structures JSON",
@@ -127,6 +136,8 @@ export const projectsData = [
     bannerClass: "project-banner-banque",
     desc: "Simulateur interactif de gestion de comptes bancaires : historique des transactions, calculs d'intérêts et de soldes en temps réel, validation de formulaires et sécurité des flux.",
     tags: ["JavaScript", "Modélisation", "CSS Grid", "State Logic"],
+    liveUrl: null,
+    githubUrl: "https://github.com/DavidAtse/SinglePageWebSite",
     highlights: [
       "Mise en place d'une logique métier rigoureuse pour les calculs de débits/crédits",
       "Contrôle de conformité des montants et validation des règles de gestion",
@@ -135,18 +146,20 @@ export const projectsData = [
     ]
   },
   {
-    id: "netflix",
-    title: "Netflix Clone & Réseau Social",
-    category: "react",
-    badge: "Streaming UI & Réseau Social",
-    bannerClass: "project-banner-netflix",
-    desc: "Reproduction d'interfaces complexes : bannières héro dynamiques, carrousels de vidéos défilants, flux d'actualités avec likes et commentaires en temps réel.",
-    tags: ["UI/UX Avancé", "JavaScript", "Carrousel CSS", "Composants"],
+    id: "portfolio-interactif",
+    title: "Portfolio Développeur Interactif",
+    category: "php",
+    badge: "Vitrine Personnelle",
+    bannerClass: "project-banner-portfolio",
+    desc: "Conception et développement d'un portfolio immersif et responsive mettant en valeur mes réalisations techniques, mes compétences et mon identité visuelle à travers des animations soignées.",
+    tags: ["PHP", "JavaScript", "Responsive Design", "UI/UX", "CSS3 / Animations"],
+    liveUrl: "https://david-portfolio.infinityfreeapp.com",
+    githubUrl: "https://github.com/DavidAtse/portfolio",
     highlights: [
-      "Développement de carrousels défilants fluides en CSS & JS",
-      "Gestion d'interactions sociales dynamiques (likes, ajouts aux favoris)",
-      "Ambiance sombre cinématographique et respect des codes UI modernes",
-      "Composants réutilisables et code maintenable"
+      "Architecture modulaire et structure de composants réutilisables pour une maintenance aisée",
+      "Design responsive et ergonomique adapté à tous types d'écrans (Mobile, Tablette, Desktop)",
+      "Intégration d'animations fluides pour une expérience utilisateur interactive et engageante",
+      "Optimisation du référencement (SEO) et des performances de chargement"
     ]
   }
 ];

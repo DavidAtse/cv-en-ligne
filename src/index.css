@@ -858,6 +858,10 @@ body {
   overflow: hidden;
 }
 
+.project-banner-imots {
+  background: linear-gradient(135deg, #ea580c 0%, #c2410c 45%, #15803d 100%);
+}
+
 .project-banner-pierres {
   background: linear-gradient(135deg, #2e1065 0%, #3b0764 50%, #1e1b4b 100%);
 }
@@ -946,28 +950,55 @@ body {
   color: #e9d5ff;
 }
 
+.project-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+}
+
 .project-action-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 16px;
+  padding: 8px 14px;
   border-radius: var(--radius-pill);
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.2s ease;
+  justify-content: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.project-action-btn.secondary {
+  flex: 1;
   background: rgba(45, 23, 90, 0.7);
   border: 1px solid rgba(192, 132, 252, 0.35);
   color: #ffffff;
-  transition: all 0.2s ease;
-  width: 100%;
-  justify-content: center;
 }
 
-.project-action-btn:hover {
+.project-action-btn.secondary:hover {
   background: rgba(70, 35, 140, 0.9);
   border-color: var(--accent-light-purple);
   box-shadow: 0 0 14px rgba(168, 85, 247, 0.4);
+}
+
+.project-action-btn.live-direct-btn {
+  flex: 0 0 auto;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border: 1px solid rgba(52, 211, 153, 0.5);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+  padding: 8px 16px;
+}
+
+.project-action-btn.live-direct-btn:hover {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.55);
+  transform: translateY(-1px);
 }
 
 /* --------------------------------------------------------------------------
@@ -1090,12 +1121,58 @@ body {
   gap: 4px;
 }
 
+.modal-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
 .modal-badge {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   color: var(--accent-light-purple);
   text-transform: uppercase;
   letter-spacing: 0.08em;
+}
+
+.modal-status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.modal-status-tag.live {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.modal-status-tag.repo {
+  background: rgba(168, 85, 247, 0.15);
+  color: #d8b4fe;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+}
+
+.live-ping {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #10b981;
+  box-shadow: 0 0 8px #10b981;
+  animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
 }
 
 .modal-title {
@@ -1175,10 +1252,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 12px;
+  gap: 10px;
   padding: 18px 26px;
   background: rgba(14, 7, 30, 0.7);
   border-top: 1px solid rgba(168, 85, 247, 0.2);
+  flex-wrap: wrap;
+}
+
+.modal-cancel-btn {
+  order: 1;
+}
+
+.modal-repo-btn {
+  order: 2;
+  gap: 8px;
+}
+
+.modal-repo-btn.secondary-repo {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #e2e8f0;
+}
+
+.modal-repo-btn.secondary-repo:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(192, 132, 252, 0.6);
+  color: #ffffff;
+}
+
+.modal-live-btn {
+  order: 3;
+  gap: 8px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%) !important;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.4) !important;
+  border: 1px solid rgba(52, 211, 153, 0.6) !important;
+}
+
+.modal-live-btn:hover {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%) !important;
+  box-shadow: 0 6px 22px rgba(16, 185, 129, 0.6) !important;
 }
 
 /* --------------------------------------------------------------------------

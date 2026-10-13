@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
-import { Layers, Music, Briefcase, Film, Landmark, Tv, ArrowRight } from 'lucide-react';
+import { Layers, Music, Briefcase, Film, Landmark, Tv, ArrowRight, Gamepad2, ExternalLink } from 'lucide-react';
 
 export default function ProjectsSection({ projects, onSelectProject }) {
   const [filter, setFilter] = useState('all');
 
   const filteredProjects = projects.filter(p => {
     if (filter === 'all') return true;
-    return p.category.includes(filter);
+    return p.category.toLowerCase().includes(filter.toLowerCase());
   });
 
   const getProjectIcon = (id) => {
     switch (id) {
+      case 'imots-devinemot-ci': return <Gamepad2 style={{ width: 22, height: 22 }} />;
       case 'pierres': return <Layers style={{ width: 22, height: 22 }} />;
       case 'babifab': return <Music style={{ width: 22, height: 22 }} />;
       case 'emploi': return <Briefcase style={{ width: 22, height: 22 }} />;
@@ -43,6 +44,12 @@ export default function ProjectsSection({ projects, onSelectProject }) {
             Tous
           </button>
           <button 
+            className={`filter-btn ${filter === 'jeu' ? 'active' : ''}`}
+            onClick={() => setFilter('jeu')}
+          >
+            Jeux
+          </button>
+          <button 
             className={`filter-btn ${filter === 'fullstack' ? 'active' : ''}`}
             onClick={() => setFilter('fullstack')}
           >
@@ -52,50 +59,74 @@ export default function ProjectsSection({ projects, onSelectProject }) {
             className={`filter-btn ${filter === 'react' ? 'active' : ''}`}
             onClick={() => setFilter('react')}
           >
-            React / Front
+            React
           </button>
           <button 
             className={`filter-btn ${filter === 'api' ? 'active' : ''}`}
             onClick={() => setFilter('api')}
           >
-            APIs & Apps
+            APIs
           </button>
         </div>
       </div>
 
       {/* Projects Grid */}
       <div className="projects-grid">
-        {filteredProjects.map((project) => (
-          <article key={project.id} className="project-box">
-            <div className={`project-banner ${project.bannerClass}`}>
-              <div className="banner-badge">{project.badge}</div>
-              <div className="banner-icon">
-                {getProjectIcon(project.id)}
-              </div>
-            </div>
+        {filteredProjects.map((project) => {
+          const isGame = Boolean(
+            project.category?.toLowerCase().includes('jeu') || 
+            project.id?.includes('imots')
+          );
 
-            <div className="project-body">
-              <h3 className="project-title">{project.title}</h3>
-              <p className="project-desc">{project.desc}</p>
-
-              <div className="project-tags">
-                {project.tags.map((tag, i) => (
-                  <span key={i} className="p-tag">{tag}</span>
-                ))}
+          return (
+            <article key={project.id} className="project-box">
+              <div className={`project-banner ${project.bannerClass}`}>
+                <div className="banner-badge">{project.badge}</div>
+                <div className="banner-icon">
+                  {getProjectIcon(project.id)}
+                </div>
               </div>
 
-              <div className="project-actions">
-                <button 
-                  className="project-action-btn"
-                  onClick={() => onSelectProject(project)}
-                >
-                  <span>Détails & Stack</span>
-                  <ArrowRight style={{ width: 14, height: 14 }} />
-                </button>
+              <div className="project-body">
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-desc">{project.desc}</p>
+
+                <div className="project-tags">
+                  {project.tags.map((tag, i) => (
+                    <span key={i} className="p-tag">{tag}</span>
+                  ))}
+                </div>
+
+                <div className="project-actions">
+                  <button 
+                    className="project-action-btn secondary"
+                    onClick={() => onSelectProject(project)}
+                  >
+                    <span>Détails & Stack</span>
+                    <ArrowRight style={{ width: 14, height: 14 }} />
+                  </button>
+
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-action-btn live-direct-btn"
+                      title={isGame ? "Jouer en direct" : "Voir le site en direct"}
+                    >
+                      {isGame ? (
+                        <Gamepad2 style={{ width: 14, height: 14 }} />
+                      ) : (
+                        <ExternalLink style={{ width: 13, height: 13 }} />
+                      )}
+                      <span>{isGame ? "Jouer" : "Démo"}</span>
+                    </a>
+                  )}
+                </div>
               </div>
-            </div>
-          </article>
-        ))}
+            </article>
+          );
+        })}
       </div>
     </section>
   );
