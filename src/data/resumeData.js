@@ -57,58 +57,21 @@ export const skillsData = [
 
 export const projectsData = [
   {
-    id: "imots-devinemot-ci",
-    title: "iMots",
-    category: "Jeu Ludo-Éducatif Web",
-    badge: "PHP / JavaScript natif",
-    bannerClass: "project-banner-imots",
-    desc: "Plateforme web mobile interactive de devinette de mots 100 % ancrée dans la culture ivoirienne (nouchi, gastronomie, villes). Architecture légère avec sécurité anti-triche et synchronisation multi-appareils.",
-    tags: ["PHP", "JavaScript", "Temps Réel", "Mobile-First"],
-    liveUrl: "https://imots.alwaysdata.net/",
-    liveLabel: "Jouer au jeu (En direct)",
-    githubUrl: "https://github.com/DavidAtse/Devine-Mot",
+    id: "bibliotheque",
+    title: "Ma Bibliothèque Web",
+    category: "javascript front",
+    badge: "JavaScript ES6 (POO) & LocalStorage",
+    bannerClass: "project-banner-bibliotheque",
+    desc: "Application web interactive de gestion et suivi de lectures : ajout de livres, bascule d'état (lu / non lu), suppression et persistance automatique des données via le LocalStorage du navigateur.",
+    tags: ["JavaScript (POO)", "LocalStorage", "Manipulation DOM", "CSS3", "Vercel"],
+    liveUrl: "https://bibliotheque-red-sigma.vercel.app",
+    liveLabel: "Voir la démo (Vercel)",
+    githubUrl: "https://github.com/DavidAtse/Bibliotheque",
     highlights: [
-      "Mécanique addictive avec 4 créneaux par jour et indicateur de proximité thermique",
-      "Sécurité anti-triche côté serveur et synchronisation des profils multi-appareils",
-      "Génération instantanée de fiches pédagogiques et culturelles à la victoire",
-      "Architecture légère et optimisée pour une faible consommation de data mobile",
-      "Gestion dynamique de classements (Leaderboard) et profils joueurs en temps réel"
-    ]
-  },
-  {
-    id: "pierres",
-    title: "Pierres Vivantes",
-    category: "fullstack react",
-    badge: "Fullstack React + Laravel",
-    bannerClass: "project-banner-pierres",
-    desc: "Application web complète avec architecture découplée : Frontend dynamique sous React 19 & React Router, backend API Laravel & TailwindCSS, gestion de données interactive.",
-    tags: ["React 19", "Laravel", "Tailwind", "Vite"],
-    liveUrl: null,
-    githubUrl: "https://github.com/DavidAtse/Pierres-Vivantes",
-    highlights: [
-      "Architecture moderne découplée Frontend React 19 / Backend Laravel",
-      "Système de routage dynamique et réactif avec React Router",
-      "Intégration d'interfaces élégantes et réactives avec Tailwind CSS",
-      "Création d'APIs RESTful sécurisées et structurées",
-      "Gestion optimisée des assets et des performances avec Vite"
-    ]
-  },
-  {
-    id: "babifab",
-    title: "BabiFab Sound",
-    category: "fullstack",
-    badge: "Plateforme Musicale",
-    bannerClass: "project-banner-babifab",
-    desc: "Plateforme musicale et streaming audio complète conçue pour valoriser les artistes indépendants : lecteur audio interactif, gestion de playlists, catalogue dynamique et back-office Laravel.",
-    tags: ["Laravel", "Audio Web API", "PHP", "UI/UX"],
-    liveUrl: null,
-    githubUrl: "https://github.com/DavidAtse/BabiFab-Sound",
-    highlights: [
-      "Lecteur audio interactif avec contrôles de lecture temps réel",
-      "Gestion fluide des pistes audio, métadonnées et playlists",
-      "Conception rigoureuse basée sur un cahier des charges fonctionnel et technique",
-      "Interface d'administration Laravel pour la gestion du contenu musical",
-      "Design moderne axé sur une excellente expérience auditeur"
+      "Conception orientée objet avec séparation stricte des classes (Livre, Bibliotheque) et logique découplée",
+      "Persistance locale des données en temps réel via l'API Web LocalStorage",
+      "Manipulation dynamique et réactive du DOM en JavaScript Vanilla moderne sans framework lourd",
+      "Hébergement et déploiement continu sur la plateforme Vercel"
     ]
   },
   {
@@ -130,21 +93,77 @@ export const projectsData = [
     ]
   },
   {
-    id: "bibliotheque",
-    title: "Ma Bibliothèque Web",
-    category: "javascript front",
-    badge: "JavaScript ES6 (POO) & LocalStorage",
-    bannerClass: "project-banner-bibliotheque",
-    desc: "Application web interactive de gestion et suivi de lectures : ajout de livres, bascule d'état (lu / non lu), suppression et persistance automatique des données via le LocalStorage du navigateur.",
-    tags: ["JavaScript (POO)", "LocalStorage", "Manipulation DOM", "CSS3", "Vercel"],
-    liveUrl: "https://bibliotheque-red-sigma.vercel.app",
-    liveLabel: "Voir la démo (Vercel)",
-    githubUrl: "https://github.com/DavidAtse/Bibliotheque",
+    id: "e-mairie-gmdi",
+    title: "E-Mairie (GMDI)",
+    category: "fullstack laravel php",
+    badge: "Fullstack Angular 21 & Laravel 12",
+    bannerClass: "project-banner-emairie",
+    desc: "Plateforme municipale unifiée de Gestion Municipale Digitale Intégrée (GMDI) regroupant 7 modules métier (État civil, Finances, RH, Patrimoine, Services techniques, Urbanisme/SIG, Communication) avec API REST centralisée et authentification unique.",
+    tags: ["Angular 21", "Laravel 12", "API REST", "Sanctum", "MySQL"],
+    liveUrl: "https://e-mairie.voisilab.app/",
+    liveLabel: "Accéder à E-Mairie",
+    githubUrl: "https://github.com/DavidAtse/GMDI---Succ-s-perso.git",
     highlights: [
-      "Conception orientée objet avec séparation stricte des classes (Livre, Bibliotheque) et logique découplée",
-      "Persistance locale des données en temps réel via l'API Web LocalStorage",
-      "Manipulation dynamique et réactive du DOM en JavaScript Vanilla moderne sans framework lourd",
-      "Hébergement et déploiement continu sur la plateforme Vercel"
+      "Architecture unifiée découplée Frontend SPA Angular 21 et API RESTful sous Laravel 12",
+      "Conception et intégration de 7 modules métier communaux : État civil, Finances, RH, Patrimoine, Services techniques, Urbanisme / SIG et Communication",
+      "Authentification centralisée et sécurisée avec jeton unique Laravel Sanctum (gmdi_token) et gestion des rôles / autorisations Spatie",
+      "Optimisation des performances grâce à une architecture modulaire et le lazy loading complet côté Angular",
+      "Projet d'envergure développé dans le cadre d'un stage à la Fabrique Numérique de l'UVCI et déployé en ligne"
+    ]
+  },
+  {
+    id: "babifab",
+    title: "BabiFab Sound",
+    category: "fullstack",
+    badge: "Plateforme Musicale",
+    bannerClass: "project-banner-babifab",
+    desc: "Plateforme musicale et streaming audio complète conçue pour valoriser les artistes indépendants : lecteur audio interactif, gestion de playlists, catalogue dynamique et back-office Laravel.",
+    tags: ["Laravel", "Audio Web API", "PHP", "UI/UX"],
+    liveUrl: null,
+    githubUrl: "https://github.com/DavidAtse/BabiFab.git",
+    highlights: [
+      "Lecteur audio interactif avec contrôles de lecture temps réel",
+      "Gestion fluide des pistes audio, métadonnées et playlists",
+      "Conception rigoureuse basée sur un cahier des charges fonctionnel et technique",
+      "Interface d'administration Laravel pour la gestion du contenu musical",
+      "Design moderne axé sur une excellente expérience auditeur"
+    ]
+  },
+  {
+    id: "pierres",
+    title: "Pierres Vivantes",
+    category: "fullstack react",
+    badge: "Fullstack React + Laravel",
+    bannerClass: "project-banner-pierres",
+    desc: "Application web complète avec architecture découplée : Frontend dynamique sous React 19 & React Router, backend API Laravel & TailwindCSS, gestion de données interactive.",
+    tags: ["React 19", "Laravel", "Tailwind", "Vite"],
+    liveUrl: null,
+    githubUrl: "https://github.com/DavidAtse/Pierres-Vivantes",
+    highlights: [
+      "Architecture moderne découplée Frontend React 19 / Backend Laravel",
+      "Système de routage dynamique et réactif avec React Router",
+      "Intégration d'interfaces élégantes et réactives avec Tailwind CSS",
+      "Création d'APIs RESTful sécurisées et structurées",
+      "Gestion optimisée des assets et des performances avec Vite"
+    ]
+  },
+  {
+    id: "imots-devinemot-ci",
+    title: "iMots",
+    category: "Jeu Ludo-Éducatif Web",
+    badge: "PHP / JavaScript natif",
+    bannerClass: "project-banner-imots",
+    desc: "Plateforme web mobile interactive de devinette de mots 100 % ancrée dans la culture ivoirienne (nouchi, gastronomie, villes). Architecture légère avec sécurité anti-triche et synchronisation multi-appareils.",
+    tags: ["PHP", "JavaScript", "Temps Réel", "Mobile-First"],
+    liveUrl: "https://imots.alwaysdata.net/",
+    liveLabel: "Jouer au jeu (En direct)",
+    githubUrl: "https://github.com/DavidAtse/Devine-Mot",
+    highlights: [
+      "Mécanique addictive avec 4 créneaux par jour et indicateur de proximité thermique",
+      "Sécurité anti-triche côté serveur et synchronisation des profils multi-appareils",
+      "Génération instantanée de fiches pédagogiques et culturelles à la victoire",
+      "Architecture légère et optimisée pour une faible consommation de data mobile",
+      "Gestion dynamique de classements (Leaderboard) et profils joueurs en temps réel"
     ]
   },
   {

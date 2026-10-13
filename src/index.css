@@ -858,6 +858,10 @@ body {
   overflow: hidden;
 }
 
+.project-banner-emairie {
+  background: linear-gradient(135deg, #064e3b 0%, #059669 45%, #ea580c 100%);
+}
+
 .project-banner-imots {
   background: linear-gradient(135deg, #ea580c 0%, #c2410c 45%, #15803d 100%);
 }
