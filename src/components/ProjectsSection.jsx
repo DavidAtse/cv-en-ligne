@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layers, Music, BookOpen, Globe, ArrowRight, Gamepad2, ExternalLink } from 'lucide-react';
+import { Layers, Music, BookOpen, Globe, FileText, ArrowRight, Gamepad2, ExternalLink } from 'lucide-react';
 
 export default function ProjectsSection({ projects, onSelectProject }) {
   const [filter, setFilter] = useState('all');
@@ -15,6 +15,7 @@ export default function ProjectsSection({ projects, onSelectProject }) {
   const getProjectIcon = (id) => {
     switch (id) {
       case 'imots-devinemot-ci': return <Gamepad2 style={{ width: 22, height: 22 }} />;
+      case 'cv-en-ligne': return <FileText style={{ width: 22, height: 22 }} />;
       case 'pierres': return <Layers style={{ width: 22, height: 22 }} />;
       case 'babifab': return <Music style={{ width: 22, height: 22 }} />;
       case 'bibliotheque': return <BookOpen style={{ width: 22, height: 22 }} />;

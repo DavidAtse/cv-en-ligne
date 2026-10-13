@@ -146,5 +146,23 @@ export const projectsData = [
       "Manipulation dynamique et réactive du DOM en JavaScript Vanilla moderne sans framework lourd",
       "Hébergement et déploiement continu sur la plateforme Vercel"
     ]
+  },
+  {
+    id: "cv-en-ligne",
+    title: "CV Numérique & Portfolio Interactif",
+    category: "react front",
+    badge: "React 19 & Vite",
+    bannerClass: "project-banner-cvenligne",
+    desc: "Application web moderne de présentation professionnelle interactive : conception ultra-réactive sous React 19, interface futuriste en Glassmorphism avec filtres dynamiques, fenêtres modales détaillées et export PDF optimisé.",
+    tags: ["React 19", "Vite", "JavaScript ES6+", "Glassmorphism", "Lucide Icons"],
+    liveUrl: null,
+    githubUrl: "https://github.com/DavidAtse/cv-en-ligne",
+    highlights: [
+      "Architecture moderne basée sur React 19 et Vite pour un bundle ultra-léger et des performances optimales",
+      "Interface utilisateur haute fidélité avec design Glassmorphism, animations soignées et dark mode néon",
+      "Système de filtrage dynamique des projets et fenêtres modales interactives avec navigation accessible",
+      "Feuille de style d'impression dédiée (@media print) pour un export PDF propre et professionnel",
+      "Organisation modulaire des composants et gestion centralisée des données de profil"
+    ]
   }
 ];

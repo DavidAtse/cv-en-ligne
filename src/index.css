@@ -878,6 +878,10 @@ body {
   background: linear-gradient(135deg, #0f172a 0%, #312e81 50%, #4338ca 100%);
 }
 
+.project-banner-cvenligne {
+  background: linear-gradient(135deg, #1e1b4b 0%, #4338ca 50%, #06b6d4 100%);
+}
+
 .project-banner-emploi {
   background: linear-gradient(135deg, #1e1b4b 0%, #312e81 60%, #4338ca 100%);
 }
