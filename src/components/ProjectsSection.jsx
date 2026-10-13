@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
-import { Layers, Music, Briefcase, Film, Landmark, Tv, ArrowRight, Gamepad2, ExternalLink } from 'lucide-react';
+import { Layers, Music, BookOpen, Globe, ArrowRight, Gamepad2, ExternalLink } from 'lucide-react';
 
 export default function ProjectsSection({ projects, onSelectProject }) {
   const [filter, setFilter] = useState('all');
 
   const filteredProjects = projects.filter(p => {
     if (filter === 'all') return true;
+    if (filter === 'react-js') {
+      return p.category.toLowerCase().includes('react') || p.category.toLowerCase().includes('javascript');
+    }
     return p.category.toLowerCase().includes(filter.toLowerCase());
   });
 
@@ -14,10 +17,8 @@ export default function ProjectsSection({ projects, onSelectProject }) {
       case 'imots-devinemot-ci': return <Gamepad2 style={{ width: 22, height: 22 }} />;
       case 'pierres': return <Layers style={{ width: 22, height: 22 }} />;
       case 'babifab': return <Music style={{ width: 22, height: 22 }} />;
-      case 'emploi': return <Briefcase style={{ width: 22, height: 22 }} />;
-      case 'apifilm': return <Film style={{ width: 22, height: 22 }} />;
-      case 'banque': return <Landmark style={{ width: 22, height: 22 }} />;
-      case 'netflix': return <Tv style={{ width: 22, height: 22 }} />;
+      case 'bibliotheque': return <BookOpen style={{ width: 22, height: 22 }} />;
+      case 'portfolio-interactif': return <Globe style={{ width: 22, height: 22 }} />;
       default: return <Layers style={{ width: 22, height: 22 }} />;
     }
   };
@@ -56,16 +57,16 @@ export default function ProjectsSection({ projects, onSelectProject }) {
             Fullstack
           </button>
           <button 
-            className={`filter-btn ${filter === 'react' ? 'active' : ''}`}
-            onClick={() => setFilter('react')}
+            className={`filter-btn ${filter === 'react-js' ? 'active' : ''}`}
+            onClick={() => setFilter('react-js')}
           >
-            React
+            React & JS
           </button>
           <button 
-            className={`filter-btn ${filter === 'api' ? 'active' : ''}`}
-            onClick={() => setFilter('api')}
+            className={`filter-btn ${filter === 'php' ? 'active' : ''}`}
+            onClick={() => setFilter('php')}
           >
-            APIs
+            PHP
           </button>
         </div>
       </div>

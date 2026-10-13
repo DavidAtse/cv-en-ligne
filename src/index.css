@@ -870,6 +870,14 @@ body {
   background: linear-gradient(135deg, #4a044e 0%, #3b0764 60%, #0369a1 100%);
 }
 
+.project-banner-bibliotheque {
+  background: linear-gradient(135deg, #78350f 0%, #451a03 50%, #1e1b4b 100%);
+}
+
+.project-banner-portfolio {
+  background: linear-gradient(135deg, #0f172a 0%, #312e81 50%, #4338ca 100%);
+}
+
 .project-banner-emploi {
   background: linear-gradient(135deg, #1e1b4b 0%, #312e81 60%, #4338ca 100%);
 }

@@ -112,40 +112,6 @@ export const projectsData = [
     ]
   },
   {
-    id: "apifilm",
-    title: "API Film & Application Météo",
-    category: "api",
-    badge: "Intégration d'APIs REST",
-    bannerClass: "project-banner-api",
-    desc: "Applications web connectées à des services tiers : recherche de films en temps réel avec affiches et métadonnées, consultation des prévisions météorologiques géolocalisées avec gestion des erreurs asynchrones.",
-    tags: ["Fetch API", "JavaScript ES6+", "Async / Await", "REST"],
-    liveUrl: null,
-    githubUrl: "https://github.com/DavidAtse/DetailEmployee",
-    highlights: [
-      "Maîtrise approfondie des requêtes Fetch et de l'asynchronisme (Async / Await)",
-      "Traitement et affichage dynamique des structures JSON",
-      "Gestion des états d'attente (loaders) et des cas d'erreurs réseau",
-      "Interface visuelle attrayante en Glassmorphism"
-    ]
-  },
-  {
-    id: "banque",
-    title: "Mini Banque Web",
-    category: "fullstack api",
-    badge: "Fintech & Logique Métier",
-    bannerClass: "project-banner-banque",
-    desc: "Simulateur interactif de gestion de comptes bancaires : historique des transactions, calculs d'intérêts et de soldes en temps réel, validation de formulaires et sécurité des flux.",
-    tags: ["JavaScript", "Modélisation", "CSS Grid", "State Logic"],
-    liveUrl: null,
-    githubUrl: "https://github.com/DavidAtse/SinglePageWebSite",
-    highlights: [
-      "Mise en place d'une logique métier rigoureuse pour les calculs de débits/crédits",
-      "Contrôle de conformité des montants et validation des règles de gestion",
-      "Historique interactif mis à jour dynamiquement dans le DOM",
-      "Mise en page modulaire et claire sous CSS Grid"
-    ]
-  },
-  {
     id: "portfolio-interactif",
     title: "Portfolio Développeur Interactif",
     category: "php",
@@ -154,12 +120,31 @@ export const projectsData = [
     desc: "Conception et développement d'un portfolio immersif et responsive mettant en valeur mes réalisations techniques, mes compétences et mon identité visuelle à travers des animations soignées.",
     tags: ["PHP", "JavaScript", "Responsive Design", "UI/UX", "CSS3 / Animations"],
     liveUrl: "https://david-portfolio.infinityfreeapp.com",
+    liveLabel: "Visiter le portfolio",
     githubUrl: "https://github.com/DavidAtse/portfolio",
     highlights: [
       "Architecture modulaire et structure de composants réutilisables pour une maintenance aisée",
       "Design responsive et ergonomique adapté à tous types d'écrans (Mobile, Tablette, Desktop)",
       "Intégration d'animations fluides pour une expérience utilisateur interactive et engageante",
       "Optimisation du référencement (SEO) et des performances de chargement"
+    ]
+  },
+  {
+    id: "bibliotheque",
+    title: "Ma Bibliothèque Web",
+    category: "javascript front",
+    badge: "JavaScript ES6 (POO) & LocalStorage",
+    bannerClass: "project-banner-bibliotheque",
+    desc: "Application web interactive de gestion et suivi de lectures : ajout de livres, bascule d'état (lu / non lu), suppression et persistance automatique des données via le LocalStorage du navigateur.",
+    tags: ["JavaScript (POO)", "LocalStorage", "Manipulation DOM", "CSS3", "Vercel"],
+    liveUrl: "https://bibliotheque-red-sigma.vercel.app",
+    liveLabel: "Voir la démo (Vercel)",
+    githubUrl: "https://github.com/DavidAtse/Bibliotheque",
+    highlights: [
+      "Conception orientée objet avec séparation stricte des classes (Livre, Bibliotheque) et logique découplée",
+      "Persistance locale des données en temps réel via l'API Web LocalStorage",
+      "Manipulation dynamique et réactive du DOM en JavaScript Vanilla moderne sans framework lourd",
+      "Hébergement et déploiement continu sur la plateforme Vercel"
     ]
   }
 ];
