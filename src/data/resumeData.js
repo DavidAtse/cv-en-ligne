@@ -7,59 +7,71 @@ export const candidateData = {
   githubDisplay: "GITHUB.COM/DAVIDATSE",
   location: "Abidjan, Côte d'Ivoire & Télétravail",
   status: "DISPONIBLE POUR PROJETS & CDI / CDD",
-  bio: "Développeur Web & Fullstack passionné par la conception d'applications web modernes, réactives et hautement performantes. Doté d'une solide expertise en front-end (React, Vite, JavaScript ES6+) et back-end (PHP, Laravel, APIs REST), je m'attache à créer des expériences utilisateur fluides et à relever des défis techniques stimulants."
+  bio: "Développeur Web & Fullstack passionné par la conception d'applications web modernes, réactives et hautement performantes. Doté d'une solide expertise en front-end (React, Vite, JavaScript ES6+) et back-end (PHP, Laravel), je m'attache à créer des expériences utilisateur fluides et à relever des défis techniques stimulants."
 };
 
 export const educationData = [
   {
     id: "edu1",
-    title: "Formation Développement Web & Mobile",
-    institution: "Spécialisation Ingénierie Web",
-    date: "2023 — 2025",
+    title: "Développement d'Application & e-Service (DAS)",
+    institution: "Université Virtuelle de Côte d'Ivoire (UVCI)",
+    date: "2024 — en cours",
     desc: "Spécialisation en ingénierie logicielle web, architectures modernes (React, Vite, Node, Laravel) et conception d'applications évolutives."
   },
   {
     id: "edu2",
-    title: "Baccalauréat Scientifique & Technologique",
-    institution: "Sciences & Informatique",
-    date: "2020 — 2023",
-    desc: "Solides fondations en algorithmique, logique mathématique, programmation informatique et sciences des données."
+    title: "Baccalauréat en mécanique (F1)",
+    institution: "Lycée Technique d'Abidjan (LTA)",
+    date: "2021 — 2024",
+    desc: "Solides fondations en mécanique, logique mathématique"
   }
 ];
 
 export const experienceData = [
   {
     id: "exp1",
-    title: "Projets Web & Développeur Freelance",
-    role: "Développeur Web Fullstack",
-    date: "2024 — Présent",
-    desc: "Conception d'applications web complètes de A à Z (Pierres Vivantes, BabiFab Sound) : intégration front-end réactive, création d'APIs RESTful avec Laravel, optimisation des flux."
+    title: "Développeur Web Fullstack",
+    role: "Développeur Web Fullstack — Projet E-Mairie (GMDI)",
+    date: "Juin – Août 2026",
+    desc: "Participation au développement de E-Mairie, une plateforme numérique de gestion municipale intégrée, réalisée dans le cadre d'un stage de 3 mois au sein de la Cellule de Prototypage et Fabrique Numérique de l'UVCI. Contribution à la conception de fonctionnalités destinées à moderniser les services municipaux, notamment la gestion administrative, le portail citoyen et le suivi des activités communales, en collaboration avec l'équipe de développement."
   },
   {
-    id: "exp2",
-    title: "Développements & Intégrations",
-    role: "Développeur Front-End & Intégrateur",
-    date: "2023 — 2024",
-    desc: "Création d'interfaces web adaptatives (plateforme Emploi-Jeune, API Film/Météo), résolution de bugs, intégration d'APIs tierces et respect des standards W3C."
+    id: "exp-imots",
+    title: "Créateur & Développeur Fullstack",
+    role: "Développeur Web Fullstack — Projet iMots (DevineMot CI)",
+    date: "2026",
+    desc: "Conception, développement et mise en ligne complète d'iMots (DevineMot CI), une plateforme web ludo-éducative mobile valorisant la culture ivoirienne. Déploiement d'une architecture technique (PHP/JS) optimisée pour la data mobile locale, intégrant une sécurité anti-triche côté serveur, une synchronisation des profils multi-appareils, et la gestion de sessions de jeu à haute fréquence (4 créneaux par jour). Le jeu est actuellement opérationnel en ligne et fédère une communauté active de joueurs avec un système de classements en temps réel."
   }
 ];
 
 export const skillsData = [
-  "React 19 & Vite",
+  "HTML5 & CSS3",
   "JavaScript (ES6+)",
   "PHP & Laravel",
-  "HTML5 & CSS3",
-  "Tailwind CSS",
-  "APIs RESTful",
+  "React 19 & Vite",
   "Responsive Web Design",
   "UI/UX Fundamentals",
   "Git & GitHub",
   "MySQL & Base de données",
-  "Node.js Basics",
-  "Architecture Web"
 ];
 
 export const projectsData = [
+  {
+    id: "imots-devinemot-ci",
+    title: "iMots",
+    category: "Jeu Ludo-Éducatif Web",
+    badge: "PHP / JavaScript natif",
+    bannerClass: "project-banner-imots",
+    desc: "Plateforme web mobile interactive de devinette de mots 100 % ancrée dans la culture ivoirienne (nouchi, gastronomie, villes). Architecture légère avec sécurité anti-triche et synchronisation multi-appareils.",
+    tags: ["PHP", "JavaScript", "Temps Réel", "Mobile-First"],
+    highlights: [
+      "Mécanique addictive avec 4 créneaux par jour et indicateur de proximité thermique",
+      "Sécurité anti-triche côté serveur et synchronisation des profils multi-appareils",
+      "Génération instantanée de fiches pédagogiques et culturelles à la victoire",
+      "Architecture légère et optimisée pour une faible consommation de data mobile",
+      "Gestion dynamique de classements (Leaderboard) et profils joueurs en temps réel"
+    ]
+  },
   {
     id: "pierres",
     title: "Pierres Vivantes",
@@ -90,21 +102,6 @@ export const projectsData = [
       "Conception rigoureuse basée sur un cahier des charges fonctionnel et technique",
       "Interface d'administration Laravel pour la gestion du contenu musical",
       "Design moderne axé sur une excellente expérience auditeur"
-    ]
-  },
-  {
-    id: "emploi",
-    title: "Plateforme Emploi Jeune",
-    category: "react fullstack",
-    badge: "Recrutement & Insertion",
-    bannerClass: "project-banner-emploi",
-    desc: "Solution web dédiée à l'orientation et à la mise en relation entre recruteurs et jeunes talents. Filtrage d'offres en direct, dépôt de candidatures et interface ergonomique.",
-    tags: ["JavaScript", "HTML5/CSS3", "Responsive", "UI moderne"],
-    highlights: [
-      "Filtrage instantané et recherche multi-critères des opportunités",
-      "Formulaires de contact et de candidature avec validation en temps réel",
-      "Architecture front-end responsive pensée pour une utilisation sur smartphone et tablette",
-      "Structure sémantique accessible et optimisée pour le référencement"
     ]
   },
   {
