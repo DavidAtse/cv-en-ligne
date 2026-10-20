@@ -902,6 +902,14 @@ body {
   background: linear-gradient(135deg, #450a0a 0%, #7f1d1d 60%, #18181b 100%);
 }
 
+.project-banner-sublimate {
+  background: linear-gradient(135deg, #581c87 0%, #831843 50%, #db2777 100%);
+}
+
+.project-banner-taskly {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #0284c7 100%);
+}
+
 .banner-badge {
   font-family: var(--font-mono);
   font-size: 0.7rem;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Layers, Music, BookOpen, Globe, FileText, ArrowRight, Gamepad2, ExternalLink, Landmark } from 'lucide-react';
+import { Layers, Music, BookOpen, Globe, FileText, ArrowRight, Gamepad2, ExternalLink, Landmark, Ticket, LayoutDashboard } from 'lucide-react';
 
 export default function ProjectsSection({ projects, onSelectProject }) {
   const [filter, setFilter] = useState('all');
@@ -21,6 +21,8 @@ export default function ProjectsSection({ projects, onSelectProject }) {
       case 'babifab': return <Music style={{ width: 22, height: 22 }} />;
       case 'bibliotheque': return <BookOpen style={{ width: 22, height: 22 }} />;
       case 'portfolio-interactif': return <Globe style={{ width: 22, height: 22 }} />;
+      case 'sbm-atelier': return <Ticket style={{ width: 22, height: 22 }} />;
+      case 'taskly': return <LayoutDashboard style={{ width: 22, height: 22 }} />;
       default: return <Layers style={{ width: 22, height: 22 }} />;
     }
   };

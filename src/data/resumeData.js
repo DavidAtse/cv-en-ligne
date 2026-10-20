@@ -82,7 +82,7 @@ export const projectsData = [
     bannerClass: "project-banner-portfolio",
     desc: "Conception et développement d'un portfolio immersif et responsive mettant en valeur mes réalisations techniques, mes compétences et mon identité visuelle à travers des animations soignées.",
     tags: ["PHP", "JavaScript", "Responsive Design", "UI/UX", "CSS3 / Animations"],
-    liveUrl: "https://david-portfolio.infinityfreeapp.com",
+    liveUrl: "https://davedev.alwaysdata.net/portfolio/",
     liveLabel: "Visiter le portfolio",
     githubUrl: "https://github.com/DavidAtse/portfolio",
     highlights: [
@@ -155,7 +155,7 @@ export const projectsData = [
     bannerClass: "project-banner-imots",
     desc: "Plateforme web mobile interactive de devinette de mots 100 % ancrée dans la culture ivoirienne (nouchi, gastronomie, villes). Architecture légère avec sécurité anti-triche et synchronisation multi-appareils.",
     tags: ["PHP", "JavaScript", "Temps Réel", "Mobile-First"],
-    liveUrl: "https://imots.alwaysdata.net/",
+    liveUrl: "https://davedev.alwaysdata.net/imots/inscription/login.php",
     liveLabel: "Jouer au jeu (En direct)",
     githubUrl: "https://github.com/DavidAtse/Devine-Mot",
     highlights: [
@@ -182,6 +182,44 @@ export const projectsData = [
       "Système de filtrage dynamique des projets et fenêtres modales interactives avec navigation accessible",
       "Feuille de style d'impression dédiée (@media print) pour un export PDF propre et professionnel",
       "Organisation modulaire des composants et gestion centralisée des données de profil"
+    ]
+  },
+  {
+    id: "sbm-atelier",
+    title: "Atelier de PERLAGE Sublimate — Système de Billetterie",
+    category: "fullstack php",
+    badge: "PHP 8.2 & JS Vanilla",
+    bannerClass: "project-banner-sublimate",
+    desc: "Plateforme web complète, légère et ultra-sécurisée de réservation de billets gérant le cycle de vente de bout en bout, intégrant une jauge stricte, des paiements Mobile Money et un tableau de bord de contrôle d'accès.",
+    tags: ["PHP 8.2", "MySQL", "JavaScript ES6", "Webhook", "Mobile-First"],
+    liveUrl: "https://davedev.alwaysdata.net/sublimate/",
+    liveLabel: "Accéder à l'Atelier",
+    githubUrl: "https://github.com/DavidAtse/sbm-atelier",
+    highlights: [
+      "Gestion automatisée d'une jauge stricte de 25 places avec réservation temporaire de 15 minutes et libération des paniers",
+      "Intégration sécurisée des paiements Jèko / Wave Business avec traitement idempotent des webhooks et signature HMAC-SHA256",
+      "Génération atomique des codes de confirmation (SBM-XXX) et envoi automatisé des billets par e-mail en HTML",
+      "Espace staff protégé pour le check-in le jour J avec vérification instantanée des billets et détection des fraudes",
+      "Architecture hautement sécurisée : rate-limiting IP, honeypot anti-bot, isolation stricte des secrets hors du webroot et en-têtes HTTP durcis"
+    ]
+  },
+  {
+    id: "taskly",
+    title: "Taskly – Tableau de bord SaaS & Gestion de projets",
+    category: "front angular",
+    badge: "Angular & LibraryUI",
+    bannerClass: "project-banner-taskly",
+    desc: "Interface moderne, intuitive et 100% responsive développée avec Angular pour le LibraryUI Challenge, intégrant des composants phares et reproduisant fidèlement une maquette de tableau de bord SaaS.",
+    tags: ["Angular", "TypeScript", "CSS", "GitHub Actions", "LibraryUI"],
+    liveUrl: "https://davidatse.github.io/libraryui/",
+    liveLabel: "Voir la démo (GitHub Pages)",
+    githubUrl: "https://github.com/DavidAtse/libraryui",
+    highlights: [
+      "Intégration et mise en valeur de 4 composants LibraryUI (Navbar 9, Table interactive, Profil utilisateur et Formulaire de contact)",
+      "Tableau de bord dynamique avec indicateurs clés (KPIs), courbe d'activité avec infobulles et diagramme de répartition en anneau",
+      "Interface utilisateur immersive avec thème sombre (#111827), navigation latérale off-canvas responsive et bascule de thème clair/sombre",
+      "Gestion avancée des tableaux (recherche en direct, filtrage, tri, sélection multiple et suppression avec Undo)",
+      "Pipeline de déploiement continu (CI/CD) automatisé vers GitHub Pages via GitHub Actions"
     ]
   }
 ];
